@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class CityList extends Component {
   renderList() {
-    this.props.cities.map((city) => {
+    return this.props.cities.map((city) => {
       return (
         <li className="list-group-item">{city.name}</li>
       );
@@ -18,4 +19,10 @@ class CityList extends Component {
   }
 }
 
-export default CityList;
+function mapStateToProps(state) {
+  return {
+    cities: state.cities
+  };
+}
+
+export default connect(mapStateToProps)(CityList);
