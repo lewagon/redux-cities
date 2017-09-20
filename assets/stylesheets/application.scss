@@ -6,6 +6,10 @@ body {
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  .cities {
+    width: 30%;
+  }
 }
 
 .list-group-item {
