@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
-class ActiveCity extends Component {
-  render() {
-    return (
-      <div className="active-city">
-        <p>{this.props.activeCity.name}</p>
-      </div>
-    );
-  }
-}
+const ActiveCity = (props) => {
+  return (
+    <div className="active-city">
+      <p>{props.activeCity.name}</p>
+    </div>
+  );
+};
 
 function mapStateToProps(state) {
   return {
