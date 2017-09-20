@@ -5,7 +5,7 @@ class CityList extends Component {
   renderList() {
     return this.props.cities.map((city) => {
       return (
-        <li className="list-group-item">{city.name}</li>
+        <li key={city.name} className="list-group-item">{city.name}</li>
       );
     });
   }
