@@ -24,5 +24,5 @@ export default function() {
     { name: 'Bordeaux', address: '107 cours Balguerie Stuttenberg, 33300' },
     { name: 'Lille', address: '2 Avenue des Saules, 59000 Lille' },
     { name: 'Lyon', address: '23 Rue Paul Montrochet, 69002 Lyon' },
-  ]
+  ];
 }
