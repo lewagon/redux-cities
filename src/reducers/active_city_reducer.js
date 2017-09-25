@@ -1,3 +1,10 @@
-export default function() {
-  return { name: 'Paris', address: '16 Villa Gaudelet, 75011 Paris' };
+export default function(state = null, action) {
+  switch (action.type) {
+    case 'CITY_SELECTED': {
+      return action.payload;
+    }
+    default: {
+      return state;
+    }
+  }
 }

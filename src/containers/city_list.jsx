@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+import City from '../components/city';
 
 class CityList extends Component {
   renderList() {
     return this.props.cities.map((city) => {
       return (
-        <li key={city.name} className="list-group-item">{city.name}</li>
+        <City key={city.name} city={city} />
       );
     });
-  }
+  };
 
   render() {
     return (
@@ -17,7 +20,7 @@ class CityList extends Component {
       </ul>
     );
   }
-}
+};
 
 function mapStateToProps(state) {
   return {

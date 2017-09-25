@@ -17,9 +17,13 @@ body {
     padding: 10px 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    h3 {
+      margin-top: 0;
+    }
   }
 }
 
 .list-group-item {
   background-color: transparent;
+  cursor: pointer;
 }
